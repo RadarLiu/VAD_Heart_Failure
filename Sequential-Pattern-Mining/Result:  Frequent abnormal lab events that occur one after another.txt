@@ -1,0 +1,67 @@
+Frequent abnormal lab events that occur one after another (so the earlier might lead to the latter):
+
+Format:   (xxx) -> (yyy) -> (zzz) -> …… #SUP Num  ,   means zzz(which may also be a set of diagnoses) is usually diagnosed after yyy, which is usually diagnosed after xxx. 
+
+"Red Blood Cells" -> "Red Blood Cells" #SUP: 6348
+"Hemoglobin" -> "Red Blood Cells" #SUP: 5979
+"Red Blood Cells" -> "Hemoglobin" #SUP: 6116
+"Hematocrit" -> "Red Blood Cells" #SUP: 5941
+"Red Blood Cells" -> "Hematocrit" #SUP: 6351
+"Urea Nitrogen" -> "Red Blood Cells" #SUP: 5146
+"Glucose" -> "Red Blood Cells" #SUP: 5783
+"Red Blood Cells" -> "Glucose" #SUP: 5467
+"Red Blood Cells" -> "Hematocrit" "Hemoglobin" #SUP: 5958
+"Red Blood Cells" -> "Hematocrit" "Red Blood Cells" #SUP: 5993
+"Red Blood Cells" -> "Hematocrit" "Hemoglobin" "Red Blood Cells" #SUP: 5897
+"Red Blood Cells" -> "Hemoglobin" "Red Blood Cells" #SUP: 6025
+"Hemoglobin" -> "Hemoglobin" #SUP: 6104
+"Hematocrit" -> "Hemoglobin" #SUP: 5984
+"Hemoglobin" -> "Hematocrit" #SUP: 6255
+"Glucose" -> "Hemoglobin" #SUP: 5624
+"Hemoglobin" -> "Glucose" #SUP: 5242
+"Hemoglobin" -> "Hematocrit" "Hemoglobin" #SUP: 5916
+"Hemoglobin" -> "Hematocrit" "Red Blood Cells" #SUP: 5787
+"Hemoglobin" "Red Blood Cells" -> "Hematocrit" #SUP: 5959
+"Hemoglobin" -> "Hematocrit" "Hemoglobin" "Red Blood Cells" #SUP: 5754
+"Hemoglobin" -> "Hemoglobin" "Red Blood Cells" #SUP: 5874
+"Hemoglobin" "Red Blood Cells" -> "Hemoglobin" #SUP: 5756
+"Hemoglobin" "Red Blood Cells" -> "Red Blood Cells" #SUP: 5772
+"Hemoglobin" "Red Blood Cells" -> "Hemoglobin" "Red Blood Cells" #SUP: 5673
+"Hemoglobin" "Red Blood Cells" -> "Hematocrit" "Red Blood Cells" #SUP: 5599
+"Hemoglobin" "Red Blood Cells" -> "Hematocrit" "Hemoglobin" #SUP: 5623
+"Hemoglobin" "Red Blood Cells" -> "Hematocrit" "Hemoglobin" "Red Blood Cells" #SUP: 5566
+"Hematocrit" -> "Hematocrit" #SUP: 6254
+"Urea Nitrogen" -> "Hematocrit" #SUP: 5188
+"Glucose" -> "Hematocrit" #SUP: 5821
+"Hematocrit" -> "Glucose" #SUP: 5189
+"Hematocrit" -> "Hematocrit" "Hemoglobin" #SUP: 5874
+"Hematocrit" "Hemoglobin" -> "Hematocrit" #SUP: 5999
+"Hematocrit" -> "Hematocrit" "Red Blood Cells" #SUP: 5784
+"Hematocrit" "Red Blood Cells" -> "Hematocrit" #SUP: 5932
+"Hematocrit" -> "Hematocrit" "Hemoglobin" "Red Blood Cells" #SUP: 5718
+"Hematocrit" "Hemoglobin" -> "Hemoglobin" #SUP: 5762
+"Hematocrit" -> "Hemoglobin" "Red Blood Cells" #SUP: 5793
+"Hematocrit" "Red Blood Cells" -> "Hemoglobin" #SUP: 5671
+"Hematocrit" "Hemoglobin" -> "Red Blood Cells" #SUP: 5660
+"Hematocrit" "Hemoglobin" "Red Blood Cells" -> "Red Blood Cells" #SUP: 5555
+"Hematocrit" "Hemoglobin" "Red Blood Cells" -> "Hemoglobin" #SUP: 5556
+"Hematocrit" "Hemoglobin" "Red Blood Cells" -> "Hematocrit" #SUP: 5797
+"Hematocrit" "Hemoglobin" "Red Blood Cells" -> "Hematocrit" "Hemoglobin" #SUP: 5462
+"Hematocrit" "Hemoglobin" "Red Blood Cells" -> "Hematocrit" "Red Blood Cells" #SUP: 5437
+"Hematocrit" "Hemoglobin" "Red Blood Cells" -> "Hematocrit" "Hemoglobin" "Red Blood Cells" #SUP: 5405
+"Hematocrit" "Hemoglobin" "Red Blood Cells" -> "Hemoglobin" "Red Blood Cells" #SUP: 5475
+"Hematocrit" "Hemoglobin" -> "Hemoglobin" "Red Blood Cells" #SUP: 5576
+"Hematocrit" "Hemoglobin" -> "Hematocrit" "Red Blood Cells" #SUP: 5537
+"Hematocrit" "Hemoglobin" -> "Hematocrit" "Hemoglobin" #SUP: 5656
+"Hematocrit" "Hemoglobin" -> "Hematocrit" "Hemoglobin" "Red Blood Cells" #SUP: 5505
+"Hematocrit" "Red Blood Cells" -> "Red Blood Cells" #SUP: 5719
+"Hematocrit" "Red Blood Cells" -> "Hemoglobin" "Red Blood Cells" #SUP: 5589
+"Hematocrit" "Red Blood Cells" -> "Hematocrit" "Red Blood Cells" #SUP: 5577
+"Hematocrit" "Red Blood Cells" -> "Hematocrit" "Hemoglobin" #SUP: 5575
+"Hematocrit" "Red Blood Cells" -> "Hematocrit" "Hemoglobin" "Red Blood Cells" #SUP: 5517
+"Urea Nitrogen" -> "Urea Nitrogen" #SUP: 5419
+"Glucose" -> "Glucose" #SUP: 5780
+"Glucose" -> "Hematocrit" "Hemoglobin" #SUP: 5381
+"Glucose" -> "Hematocrit" "Red Blood Cells" #SUP: 5338
+"Glucose" -> "Hematocrit" "Hemoglobin" "Red Blood Cells" #SUP: 5228
+"Glucose" -> "Hemoglobin" "Red Blood Cells" #SUP: 5385
