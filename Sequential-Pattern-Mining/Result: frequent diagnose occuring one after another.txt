@@ -1,0 +1,304 @@
+Frequent diagnoses that occur one after another:  (so the earlier might lead to the latter):
+Format:   (xxx) -> (yyy) -> (zzz) -> …… #SUP Num  ,   means zzz(which may also be a set of diagnoses) is usually diagnosed after yyy, which is usually diagnosed after xxx. 
+
+"CHF NOS" -> "Severe sepsis" #SUP: 473
+"CHF NOS" -> "Esophageal reflux" #SUP: 411
+"Esophageal reflux" -> "CHF NOS" #SUP: 435
+"Acute respiratry failure" -> "Acute respiratry failure" #SUP: 371
+"Atrial fibrillation" -> "Acute respiratry failure" #SUP: 439
+"Acute respiratry failure" -> "Atrial fibrillation" #SUP: 392
+"Crnry athrscl natve vssl" -> "Acute respiratry failure" #SUP: 367
+"Acute kidney failure NOS" -> "Acute respiratry failure" #SUP: 397
+"Acute respiratry failure" -> "Acute kidney failure NOS" #SUP: 357
+"CHF NOS" -> "Acute respiratry failure" #SUP: 750
+"Acute respiratry failure" -> "CHF NOS" #SUP: 674
+"Hypertension NOS" -> "Acute respiratry failure" #SUP: 509
+"Acute respiratry failure" -> "Hypertension NOS" #SUP: 342
+"Acute respiratry failure" -> "CHF NOS" "Atrial fibrillation" #SUP: 334
+"CHF NOS" -> "Chr systolic hrt failure" #SUP: 328
+"Atrial fibrillation" -> "Atrial fibrillation" #SUP: 1176
+"Crnry athrscl natve vssl" -> "Atrial fibrillation" #SUP: 673
+"Atrial fibrillation" -> "Crnry athrscl natve vssl" #SUP: 475
+"Atrial fibrillation" -> "Hy kid NOS w cr kid I-IV" #SUP: 340
+"DMII wo cmp nt st uncntr" -> "Atrial fibrillation" #SUP: 471
+"Atrial fibrillation" -> "DMII wo cmp nt st uncntr" #SUP: 430
+"Urin tract infection NOS" -> "Atrial fibrillation" #SUP: 413
+"Atrial fibrillation" -> "Urin tract infection NOS" #SUP: 436
+"Atrial fibrillation" -> "Chronic kidney dis NOS" #SUP: 334
+"Acute kidney failure NOS" -> "Atrial fibrillation" #SUP: 598
+"Atrial fibrillation" -> "Acute kidney failure NOS" #SUP: 582
+"Atrial fibrillation" -> "Chronic hypotension" #SUP: 345
+"CHF NOS" -> "Atrial fibrillation" #SUP: 1178
+"Atrial fibrillation" -> "CHF NOS" #SUP: 1184
+"Hypertension NOS" -> "Atrial fibrillation" #SUP: 751
+"Atrial fibrillation" -> "Hypertension NOS" #SUP: 577
+"Hyperlipidemia NEC/NOS" -> "Atrial fibrillation" #SUP: 366
+"Atrial fibrillation" -> "Hyperlipidemia NEC/NOS" #SUP: 410
+"Pneumoni" -> "Atrial fibrillation" #SUP: 336
+"Atrial fibrillation" -> "Pneumoni" #SUP: 330
+"Atrial fibrillation" -> "Hyperlipidemia NEC/NOS" "CHF NOS" #SUP: 342
+"Atrial fibrillation" -> "Hyperlipidemia NEC/NOS" "Atrial fibrillation" #SUP: 337
+"Atrial fibrillation" -> "Hypertension NOS" "CHF NOS" #SUP: 435
+"Atrial fibrillation" -> "Hypertension NOS" "Atrial fibrillation" #SUP: 465
+"Atrial fibrillation" -> "Hypertension NOS" "CHF NOS" "Atrial fibrillation" #SUP: 358
+"Atrial fibrillation" -> "CHF NOS" -> "CHF NOS" #SUP: 380
+"Atrial fibrillation" -> "CHF NOS" "Acute kidney failure NOS" #SUP: 496
+"Atrial fibrillation" -> "CHF NOS" #SUP: 389
+"Atrial fibrillation" -> "CHF NOS" "Urin tract infection NOS" #SUP: 359
+"Atrial fibrillation" -> "CHF NOS" "DMII wo cmp nt st uncntr" #SUP: 361
+"Atrial fibrillation" -> "CHF NOS" "Crnry athrscl natve vssl" #SUP: 404
+"Atrial fibrillation" -> "CHF NOS" "Atrial fibrillation" #SUP: 992
+"Atrial fibrillation" -> "Atrial fibrillation" -> "CHF NOS" #SUP: 402
+"Atrial fibrillation" -> "CHF NOS" -> "Atrial fibrillation" #SUP: 370
+"Atrial fibrillation" -> "CHF NOS" "Acute respiratry failure" #SUP: 358
+"Atrial fibrillation" -> "CHF NOS" "Atrial fibrillation" -> "Atrial fibrillation" #SUP: 341
+"Atrial fibrillation" -> "CHF NOS" "Atrial fibrillation" #SUP: 358
+"Atrial fibrillation" -> "CHF NOS" "Acute kidney failure NOS" "Atrial fibrillation" #SUP: 415
+"Atrial fibrillation" -> "CHF NOS" "Atrial fibrillation" -> "CHF NOS" #SUP: 327
+"Atrial fibrillation" -> "Acute kidney failure NOS" "Atrial fibrillation" #SUP: 475
+"Atrial fibrillation" -> "Atrial fibrillation" #SUP: 428
+"Atrial fibrillation" -> "Urin tract infection NOS" "Atrial fibrillation" #SUP: 368
+"Atrial fibrillation" -> "DMII wo cmp nt st uncntr" "Atrial fibrillation" #SUP: 343
+"Atrial fibrillation" -> "Crnry athrscl natve vssl" "Atrial fibrillation" #SUP: 377
+"Atrial fibrillation" -> "Atrial fibrillation" -> "Atrial fibrillation" #SUP: 430
+"Atrial fibrillation" -> "Atrial fibrillation" "Acute respiratry failure" #SUP: 356
+"Atrial fibrillation" -> "Atrial fibrillation" -> "CHF NOS" "Atrial fibrillation" #SUP: 364
+"Crnry athrscl natve vssl" -> "Crnry athrscl natve vssl" #SUP: 780
+"DMII wo cmp nt st uncntr" -> "Crnry athrscl natve vssl" #SUP: 394
+"Crnry athrscl natve vssl" -> "DMII wo cmp nt st uncntr" #SUP: 455
+"Crnry athrscl natve vssl" -> "Urin tract infection NOS" #SUP: 371
+"Acute kidney failure NOS" -> "Crnry athrscl natve vssl" #SUP: 393
+"Crnry athrscl natve vssl" -> "Acute kidney failure NOS" #SUP: 575
+"Crnry athrscl natve vssl" -> "Chronic hypotension" #SUP: 468
+"CHF NOS" -> "Crnry athrscl natve vssl" #SUP: 867
+"Crnry athrscl natve vssl" -> "CHF NOS" #SUP: 1161
+"Hypertension NOS" -> "Crnry athrscl natve vssl" #SUP: 615
+"Crnry athrscl natve vssl" -> "Hypertension NOS" #SUP: 606
+"Crnry athrscl natve vssl" -> "Hyperlipidemia NEC/NOS" #SUP: 497
+"Crnry athrscl natve vssl" -> "Old myocardial infarct" #SUP: 376
+"Crnry athrscl natve vssl" -> "Hyperlipidemia NEC/NOS" "CHF NOS" #SUP: 422
+"Crnry athrscl natve vssl" -> "Hypertension NOS" "CHF NOS" #SUP: 473
+"Crnry athrscl natve vssl" -> "Hypertension NOS" "Crnry athrscl natve vssl" #SUP: 347
+"Crnry athrscl natve vssl" -> "CHF NOS" -> "CHF NOS" #SUP: 400
+"Crnry athrscl natve vssl" -> "CHF NOS" "Chronic hypotension" #SUP: 384
+"Crnry athrscl natve vssl" -> "CHF NOS" #SUP: 324
+"Crnry athrscl natve vssl" -> "CHF NOS" "Acute kidney failure NOS" #SUP: 497
+"Crnry athrscl natve vssl" -> "CHF NOS" "DMII wo cmp nt st uncntr" #SUP: 369
+"Crnry athrscl natve vssl" -> "CHF NOS" "Crnry athrscl natve vssl" #SUP: 659
+"Crnry athrscl natve vssl" -> "CHF NOS" "Atrial fibrillation" #SUP: 580
+"Crnry athrscl natve vssl" "Atrial fibrillation" -> "CHF NOS" #SUP: 500
+"Crnry athrscl natve vssl" -> "Crnry athrscl natve vssl" "Atrial fibrillation" #SUP: 363
+"Crnry athrscl natve vssl" "Atrial fibrillation" -> "Atrial fibrillation" #SUP: 474
+"Crnry athrscl natve vssl" "Atrial fibrillation" -> "CHF NOS" "Atrial fibrillation" #SUP: 401
+"Subendo infarc" -> "CHF NOS" #SUP: 397
+"CHF NOS" -> "Hyp kid NOS w cr kid V" #SUP: 389
+"Hyp kid NOS w cr kid V" -> "CHF NOS" #SUP: 378
+"Acute kidney failure NOS" -> "Hy kid NOS w cr kid I-IV" #SUP: 371
+"CHF NOS" -> "Hy kid NOS w cr kid I-IV" #SUP: 519
+"Hy kid NOS w cr kid I-IV" -> "CHF NOS" #SUP: 428
+"DMII wo cmp nt st uncntr" -> "DMII wo cmp nt st uncntr" #SUP: 678
+"Acute kidney failure NOS" -> "DMII wo cmp nt st uncntr" #SUP: 384
+"DMII wo cmp nt st uncntr" -> "Acute kidney failure NOS" #SUP: 432
+"CHF NOS" -> "DMII wo cmp nt st uncntr" #SUP: 765
+"DMII wo cmp nt st uncntr" -> "CHF NOS" #SUP: 827
+"Hypertension NOS" -> "DMII wo cmp nt st uncntr" #SUP: 534
+"DMII wo cmp nt st uncntr" -> "Hypertension NOS" #SUP: 418
+"DMII wo cmp nt st uncntr" -> "Hypertension NOS" "CHF NOS" #SUP: 330
+"DMII wo cmp nt st uncntr" -> "CHF NOS" "Acute kidney failure NOS" #SUP: 366
+"DMII wo cmp nt st uncntr" -> "CHF NOS" "DMII wo cmp nt st uncntr" #SUP: 553
+"DMII wo cmp nt st uncntr" -> "CHF NOS" "Crnry athrscl natve vssl" #SUP: 331
+"DMII wo cmp nt st uncntr" "Crnry athrscl natve vssl" -> "CHF NOS" #SUP: 363
+"DMII wo cmp nt st uncntr" -> "CHF NOS" "Atrial fibrillation" #SUP: 404
+"DMII wo cmp nt st uncntr" "Atrial fibrillation" -> "CHF NOS" #SUP: 342
+"DMII wo cmp nt st uncntr" "Atrial fibrillation" -> "Atrial fibrillation" #SUP: 331
+"Urin tract infection NOS" -> "Urin tract infection NOS" #SUP: 334
+"Acute kidney failure NOS" -> "Urin tract infection NOS" #SUP: 368
+"Urin tract infection NOS" -> "Acute kidney failure NOS" #SUP: 367
+"CHF NOS" -> "Urin tract infection NOS" #SUP: 659
+"Urin tract infection NOS" -> "CHF NOS" #SUP: 640
+"Hypertension NOS" -> "Urin tract infection NOS" #SUP: 480
+"Urin tract infection NOS" -> "Hypertension NOS" #SUP: 325
+"Urin tract infection NOS" -> "CHF NOS" "Atrial fibrillation" #SUP: 349
+"Atrial fibrillation" -> "Atrial fibrillation" #SUP: 341
+"Acute kidney failure NOS" -> "Chronic kidney dis NOS" #SUP: 365
+"CHF NOS" -> "Chronic kidney dis NOS" #SUP: 511
+"Chronic kidney dis NOS" -> "CHF NOS" #SUP: 471
+"Acute kidney failure NOS" -> "Acute kidney failure NOS" #SUP: 637
+"CHF NOS" -> "Acute kidney failure NOS" #SUP: 971
+"Acute kidney failure NOS" -> "CHF NOS" #SUP: 974
+"Hypertension NOS" -> "Acute kidney failure NOS" #SUP: 665
+"Acute kidney failure NOS" -> "Hypertension NOS" #SUP: 398
+"Acute kidney failure NOS" -> "Hyperlipidemia NEC/NOS" #SUP: 356
+"Acute kidney failure NOS" -> "CHF NOS" -> "CHF NOS" #SUP: 348
+"Acute kidney failure NOS" -> "CHF NOS" "Acute kidney failure NOS" #SUP: 529
+"Acute kidney failure NOS" -> "CHF NOS" "Crnry athrscl natve vssl" #SUP: 334
+"Acute kidney failure NOS" -> "CHF NOS" "Atrial fibrillation" #SUP: 514
+"Acute kidney failure NOS" "Atrial fibrillation" -> "CHF NOS" #SUP: 435
+"Acute kidney failure NOS" -> "CHF NOS" "Acute respiratry failure" #SUP: 325
+"Acute kidney failure NOS" "Atrial fibrillation" -> "Atrial fibrillation" #SUP: 439
+"Acute kidney failure NOS" "Atrial fibrillation" -> "CHF NOS" "Atrial fibrillation" #SUP: 376
+"Chronic hypotension" -> "Chronic hypotension" #SUP: 353
+"CHF NOS" -> "Chronic hypotension" #SUP: 529
+"Chronic hypotension" -> "CHF NOS" #SUP: 406
+"Hypertension NOS" -> "Chronic hypotension" #SUP: 382
+"CHF NOS" -> "CHF NOS" #SUP: 1813
+"Mitral valve disorder" -> "CHF NOS" #SUP: 392
+"CHF NOS" -> "Chr pulmon heart dis NEC" #SUP: 336
+"Hypertension NOS" -> "CHF NOS" #SUP: 1336
+"CHF NOS" -> "Hypertension NOS" #SUP: 980
+"Anemia NOS" -> "CHF NOS" #SUP: 458
+"CHF NOS" -> "Anemia NOS" #SUP: 444
+"Ac posthemorrhag anemia" -> "CHF NOS" #SUP: 423
+"CHF NOS" -> "Ac posthemorrhag anemia" #SUP: 364
+"Acidosis" -> "CHF NOS" #SUP: 379
+"CHF NOS" -> "Acidosis" #SUP: 412
+"Hyperlipidemia NEC/NOS" -> "CHF NOS" #SUP: 618
+"CHF NOS" -> "Hyperlipidemia NEC/NOS" #SUP: 683
+"Pure hypercholesterolem" -> "CHF NOS" #SUP: 487
+"CHF NOS" -> "Pure hypercholesterolem" #SUP: 339
+"Hypothyroidism NOS" -> "CHF NOS" #SUP: 408
+"CHF NOS" -> "Hypothyroidism NOS" #SUP: 411
+"Chr airway obstruct NEC" -> "CHF NOS" #SUP: 470
+"CHF NOS" -> "Chr airway obstruct NEC" #SUP: 490
+"Pneumoni" -> "CHF NOS" #SUP: 560
+"CHF NOS" -> "Pneumoni" #SUP: 554
+"Old myocardial infarct" -> "CHF NOS" #SUP: 397
+"CHF NOS" -> "Old myocardial infarct" #SUP: 456
+"CHF NOS" -> "Septicemia NOS" #SUP: 411
+"CHF NOS" -> "Old myocardial infarct" "CHF NOS" #SUP: 358
+"CHF NOS" -> "Pneumoni" "CHF NOS" #SUP: 433
+"CHF NOS" -> "Chr airway obstruct NEC" "CHF NOS" #SUP: 385
+"CHF NOS" -> "Hypothyroidism NOS" "CHF NOS" #SUP: 325
+"CHF NOS" -> "Hyperlipidemia NEC/NOS" "Hypertension NOS" #SUP: 327
+"CHF NOS" -> "Hyperlipidemia NEC/NOS" "CHF NOS" #SUP: 535
+"CHF NOS" "Crnry athrscl natve vssl" -> "Hyperlipidemia NEC/NOS" #SUP: 349
+"CHF NOS" -> "Hyperlipidemia NEC/NOS" "Atrial fibrillation" #SUP: 350
+"CHF NOS" -> "Anemia NOS" "CHF NOS" #SUP: 326
+"CHF NOS" -> "Hypertension NOS" "CHF NOS" #SUP: 678
+"CHF NOS" -> "Hypertension NOS" "DMII wo cmp nt st uncntr" #SUP: 330
+"CHF NOS" -> "Hypertension NOS" "Crnry athrscl natve vssl" #SUP: 365
+"CHF NOS" "Crnry athrscl natve vssl" -> "Hypertension NOS" #SUP: 430
+"CHF NOS" -> "Hypertension NOS" "Atrial fibrillation" #SUP: 450
+"CHF NOS" "Atrial fibrillation" -> "Hypertension NOS" #SUP: 426
+"CHF NOS" -> "Hypertension NOS" "CHF NOS" "Atrial fibrillation" #SUP: 333
+"CHF NOS" -> "CHF NOS" -> "CHF NOS" #SUP: 642
+"CHF NOS" -> "CHF NOS" "Chronic hypotension" #SUP: 423
+"CHF NOS" -> "CHF NOS" "Acute kidney failure NOS" #SUP: 767
+"CHF NOS" -> "Acute kidney failure NOS" -> "CHF NOS" #SUP: 325
+"CHF NOS" -> "CHF NOS" -> "Acute kidney failure NOS" #SUP: 336
+"CHF NOS" "Acute kidney failure NOS" -> "CHF NOS" #SUP: 722
+"CHF NOS" -> "CHF NOS" "Chronic kidney dis NOS" #SUP: 423
+"CHF NOS" "Chronic kidney dis NOS" -> "CHF NOS" #SUP: 367
+"CHF NOS" -> "CHF NOS" #SUP: 397
+"CHF NOS" -> "CHF NOS" "Urin tract infection NOS" #SUP: 487
+"CHF NOS" "Urin tract infection NOS" -> "CHF NOS" #SUP: 439
+"CHF NOS" -> "CHF NOS" "DMII wo cmp nt st uncntr" #SUP: 587
+"CHF NOS" "DMII wo cmp nt st uncntr" -> "CHF NOS" #SUP: 583
+"CHF NOS" -> "CHF NOS" "Hy kid NOS w cr kid I-IV" #SUP: 441
+"CHF NOS" "Hy kid NOS w cr kid I-IV" -> "CHF NOS" #SUP: 344
+"CHF NOS" -> "CHF NOS" "Crnry athrscl natve vssl" #SUP: 701
+"CHF NOS" "Crnry athrscl natve vssl" -> "CHF NOS" #SUP: 800
+"CHF NOS" -> "CHF NOS" "Atrial fibrillation" #SUP: 946
+"CHF NOS" -> "Atrial fibrillation" -> "CHF NOS" #SUP: 385
+"CHF NOS" -> "CHF NOS" -> "Atrial fibrillation" #SUP: 397
+"CHF NOS" "Atrial fibrillation" -> "CHF NOS" #SUP: 862
+"CHF NOS" -> "CHF NOS" "Acute respiratry failure" #SUP: 585
+"CHF NOS" "Acute respiratry failure" -> "CHF NOS" #SUP: 490
+"CHF NOS" -> "CHF NOS" "Severe sepsis" #SUP: 333
+"CHF NOS" -> "CHF NOS" "Atrial fibrillation" -> "Atrial fibrillation" #SUP: 329
+"CHF NOS" -> "CHF NOS" -> "CHF NOS" "Atrial fibrillation" #SUP: 362
+"CHF NOS" -> "CHF NOS" "Crnry athrscl natve vssl" "Atrial fibrillation" #SUP: 345
+"CHF NOS" -> "CHF NOS" "Acute kidney failure NOS" "Atrial fibrillation" #SUP: 415
+"CHF NOS" -> "CHF NOS" "Atrial fibrillation" -> "CHF NOS" #SUP: 336
+"CHF NOS" "Acute kidney failure NOS" -> "Acute kidney failure NOS" #SUP: 483
+"CHF NOS" "Crnry athrscl natve vssl" -> "Acute kidney failure NOS" #SUP: 407
+"CHF NOS" -> "Acute kidney failure NOS" "Atrial fibrillation" #SUP: 491
+"CHF NOS" "Atrial fibrillation" -> "Acute kidney failure NOS" #SUP: 458
+"CHF NOS" -> "Acute kidney failure NOS" "Acute respiratry failure" #SUP: 341
+"CHF NOS" "Acute kidney failure NOS" -> "Atrial fibrillation" #SUP: 468
+"CHF NOS" "Acute kidney failure NOS" "Atrial fibrillation" -> "Atrial fibrillation" #SUP: 360
+"CHF NOS" "Acute kidney failure NOS" "Atrial fibrillation" -> "CHF NOS" #SUP: 348
+"CHF NOS" "Acute kidney failure NOS" -> "CHF NOS" "Atrial fibrillation" #SUP: 401
+"CHF NOS" "Acute kidney failure NOS" -> "CHF NOS" "Acute kidney failure NOS" #SUP: 405
+"CHF NOS" -> "Chronic kidney dis NOS" "Hy kid NOS w cr kid I-IV" #SUP: 380
+"CHF NOS" -> "Atrial fibrillation" #SUP: 391
+"CHF NOS" -> "Urin tract infection NOS" "Atrial fibrillation" #SUP: 332
+"CHF NOS" "DMII wo cmp nt st uncntr" -> "DMII wo cmp nt st uncntr" #SUP: 501
+"CHF NOS" "Crnry athrscl natve vssl" -> "DMII wo cmp nt st uncntr" #SUP: 354
+"CHF NOS" -> "DMII wo cmp nt st uncntr" "Atrial fibrillation" #SUP: 370
+"CHF NOS" "Atrial fibrillation" -> "DMII wo cmp nt st uncntr" #SUP: 341
+"CHF NOS" "DMII wo cmp nt st uncntr" -> "Atrial fibrillation" #SUP: 353
+"CHF NOS" "DMII wo cmp nt st uncntr" -> "CHF NOS" "DMII wo cmp nt st uncntr" #SUP: 407
+"CHF NOS" "Crnry athrscl natve vssl" -> "Crnry athrscl natve vssl" #SUP: 596
+"CHF NOS" -> "Crnry athrscl natve vssl" "Atrial fibrillation" #SUP: 416
+"CHF NOS" "Atrial fibrillation" -> "Crnry athrscl natve vssl" #SUP: 383
+"CHF NOS" "Crnry athrscl natve vssl" -> "Atrial fibrillation" #SUP: 494
+"CHF NOS" "Crnry athrscl natve vssl" "Atrial fibrillation" -> "Atrial fibrillation" #SUP: 360
+"CHF NOS" "Crnry athrscl natve vssl" "Atrial fibrillation" -> "CHF NOS" #SUP: 367
+"CHF NOS" "Crnry athrscl natve vssl" -> "CHF NOS" "Atrial fibrillation" #SUP: 410
+"CHF NOS" "Crnry athrscl natve vssl" -> "CHF NOS" "Crnry athrscl natve vssl" #SUP: 481
+"CHF NOS" "Crnry athrscl natve vssl" -> "CHF NOS" "Acute kidney failure NOS" #SUP: 343
+"CHF NOS" -> "Atrial fibrillation" -> "Atrial fibrillation" #SUP: 394
+"CHF NOS" "Atrial fibrillation" -> "Atrial fibrillation" #SUP: 920
+"CHF NOS" -> "Atrial fibrillation" "Acute respiratry failure" #SUP: 363
+"CHF NOS" -> "Atrial fibrillation" -> "CHF NOS" "Atrial fibrillation" #SUP: 337
+"CHF NOS" "Atrial fibrillation" -> "Acute respiratry failure" #SUP: 342
+"CHF NOS" "Atrial fibrillation" -> "Atrial fibrillation" #SUP: 342
+"CHF NOS" "Atrial fibrillation" -> "Acute kidney failure NOS" "Atrial fibrillation" #SUP: 376
+"CHF NOS" "Atrial fibrillation" -> "CHF NOS" "Atrial fibrillation" #SUP: 742
+"CHF NOS" "Atrial fibrillation" -> "Hypertension NOS" "Atrial fibrillation" #SUP: 347
+"CHF NOS" "Atrial fibrillation" -> "CHF NOS" "Acute kidney failure NOS" #SUP: 381
+"Hypertension NOS" -> "Hypertension NOS" #SUP: 954
+"Hyperlipidemia NEC/NOS" -> "Hypertension NOS" #SUP: 335
+"Hypertension NOS" -> "Hyperlipidemia NEC/NOS" #SUP: 519
+"Hypertension NOS" -> "Chr airway obstruct NEC" #SUP: 336
+"Hypertension NOS" -> "Pneumoni" #SUP: 386
+"Hypertension NOS" -> "Hyperlipidemia NEC/NOS" "Hypertension NOS" #SUP: 330
+"Hypertension NOS" -> "Hyperlipidemia NEC/NOS" "CHF NOS" #SUP: 430
+"Hypertension NOS" "CHF NOS" -> "Hyperlipidemia NEC/NOS" #SUP: 346
+"Hypertension NOS" -> "Hypertension NOS" "CHF NOS" #SUP: 737
+"Hypertension NOS" -> "Hypertension NOS" -> "CHF NOS" #SUP: 328
+"Hypertension NOS" "CHF NOS" -> "Hypertension NOS" #SUP: 644
+"Hypertension NOS" -> "Hypertension NOS" "Crnry athrscl natve vssl" #SUP: 360
+"Hypertension NOS" "Crnry athrscl natve vssl" -> "Hypertension NOS" #SUP: 412
+"Hypertension NOS" -> "Hypertension NOS" "Atrial fibrillation" #SUP: 414
+"Hypertension NOS" "Atrial fibrillation" -> "Hypertension NOS" #SUP: 366
+"Hypertension NOS" -> "Hypertension NOS" "CHF NOS" "Atrial fibrillation" #SUP: 329
+"Hypertension NOS" -> "CHF NOS" -> "CHF NOS" #SUP: 408
+"Hypertension NOS" "CHF NOS" -> "CHF NOS" #SUP: 783
+"Hypertension NOS" -> "CHF NOS" "Acute kidney failure NOS" #SUP: 554
+"Hypertension NOS" "Acute kidney failure NOS" -> "CHF NOS" #SUP: 342
+"Hypertension NOS" -> "CHF NOS" "Urin tract infection NOS" #SUP: 378
+"Hypertension NOS" -> "CHF NOS" "DMII wo cmp nt st uncntr" #SUP: 431
+"Hypertension NOS" "DMII wo cmp nt st uncntr" -> "CHF NOS" #SUP: 445
+"Hypertension NOS" -> "CHF NOS" "Crnry athrscl natve vssl" #SUP: 519
+"Hypertension NOS" "Crnry athrscl natve vssl" -> "CHF NOS" #SUP: 580
+"Hypertension NOS" -> "CHF NOS" "Atrial fibrillation" #SUP: 639
+"Hypertension NOS" "Atrial fibrillation" -> "CHF NOS" #SUP: 518
+"Hypertension NOS" -> "CHF NOS" "Acute respiratry failure" #SUP: 423
+"Hypertension NOS" "CHF NOS" -> "Acute kidney failure NOS" #SUP: 423
+"Hypertension NOS" "CHF NOS" -> "DMII wo cmp nt st uncntr" #SUP: 365
+"Hypertension NOS" "CHF NOS" -> "Crnry athrscl natve vssl" #SUP: 405
+"Hypertension NOS" "CHF NOS" -> "Atrial fibrillation" #SUP: 506
+"Hypertension NOS" "CHF NOS" "Atrial fibrillation" -> "Atrial fibrillation" #SUP: 376
+"Hypertension NOS" "CHF NOS" "Atrial fibrillation" -> "CHF NOS" #SUP: 345
+"Hypertension NOS" "CHF NOS" -> "CHF NOS" "Atrial fibrillation" #SUP: 410
+"Hypertension NOS" "CHF NOS" "Crnry athrscl natve vssl" -> "CHF NOS" #SUP: 344
+"Hypertension NOS" "CHF NOS" -> "CHF NOS" "Crnry athrscl natve vssl" #SUP: 332
+"Hypertension NOS" "CHF NOS" -> "CHF NOS" "Acute kidney failure NOS" #SUP: 336
+"Hypertension NOS" "CHF NOS" -> "Hypertension NOS" "CHF NOS" #SUP: 453
+"Hypertension NOS" "DMII wo cmp nt st uncntr" -> "DMII wo cmp nt st uncntr" #SUP: 383
+"Hypertension NOS" "Crnry athrscl natve vssl" -> "Crnry athrscl natve vssl" #SUP: 399
+"Hypertension NOS" "Crnry athrscl natve vssl" -> "Atrial fibrillation" #SUP: 329
+"Hypertension NOS" "Crnry athrscl natve vssl" -> "CHF NOS" "Crnry athrscl natve vssl" #SUP: 329
+"Hypertension NOS" "Atrial fibrillation" -> "Atrial fibrillation" #SUP: 525
+"Hypertension NOS" "Atrial fibrillation" -> "CHF NOS" "Atrial fibrillation" #SUP: 439
+"Hyperlipidemia NEC/NOS" -> "Hyperlipidemia NEC/NOS" #SUP: 456
+"Hyperlipidemia NEC/NOS" -> "Hyperlipidemia NEC/NOS" "CHF NOS" #SUP: 374
+"Hyperlipidemia NEC/NOS" "CHF NOS" -> "Hyperlipidemia NEC/NOS" #SUP: 345
+"Hyperlipidemia NEC/NOS" "Hypertension NOS" -> "CHF NOS" #SUP: 328
+"Hyperlipidemia NEC/NOS" "CHF NOS" -> "CHF NOS" #SUP: 453
+"Hypothyroidism NOS" -> "Hypothyroidism NOS" #SUP: 366
+"Chr airway obstruct NEC" -> "Chr airway obstruct NEC" #SUP: 368
+"Chr airway obstruct NEC" "CHF NOS" -> "CHF NOS" #SUP: 333
+"Pneumoni" "CHF NOS" -> "CHF NOS" #SUP: 388
