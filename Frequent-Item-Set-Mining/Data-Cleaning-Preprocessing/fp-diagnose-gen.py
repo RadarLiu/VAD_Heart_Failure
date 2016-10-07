@@ -11,6 +11,7 @@ for line in fd:
         diagnose_dict[icd9] = short_title
     except: pass
 fd.close()
+
 #convert data
 f1 = open('fp_out_diagnose_sametime.txt', 'r')
 f2 = open('fp_diag_same_time.txt', 'w')
