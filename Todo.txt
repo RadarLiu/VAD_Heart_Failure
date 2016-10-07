@@ -1,0 +1,4 @@
+Wait for next meeting to decide what to do about:
+1. Clustering results on patients
+2. Frequent itemset / sequential pattern on diagnoses
+3. ...
