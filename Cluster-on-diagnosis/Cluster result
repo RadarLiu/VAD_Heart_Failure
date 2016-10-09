@@ -1,0 +1,54 @@
+1. First admission to death (days)
+Distribution
+
+Top durations: 6 days: 94 patients, 1: 93, 2: 82, 5: 81, 4: 76, 7: 74, 8: 71, 3: 65, 12: 62, 9: 60, 0: 58, 11: 50, 10: 48, 14: 48, 17: 46, 13: 42, 16: 41, 19: 35, 18: 34, 24: 34, 22: 33, 15: 32, 25: 30, 29: 29, 28: 28, 31: 28, 21: 27, 20: 26, 26: 26, 35: 25, 42: 22, 32: 21, 23: 20, 33: 20
+
+2. Number of admissions distribution
+ 
+Statistics : 1 stay: 2610 patients , 2: 1745, 4: 288, 3: 262, 6: 90, 5: 87, 8: 43, 7: 34, 10: 20, 12: 9, 13: 9, 9: 8, 11: 7, 15: 3, 17: 3, 19: 3, 14: 2, 16: 2, 18: 1, 20: 1, 21: 1, 22: 1, 24: 1, 25: 1, 29: 1
+93.75% patients have less than 4 stays in hospital, regard each stay (together with all the diagnoses within that stay as a data point), and cluster on those stays to predict average life span. One data point indicates a healthing status.
+
+3. Clustering on single hospital stay
+Diagnoses: pick first 3 digits as a diagnose
+Eg. 40303: 403* - Hypertensive chronic kidney disease   
+         			       58281: 582* - Chronic glomerulonephritis
+Similarity: Jaccard Similarity
+Distance: 1 - Jaccard Similarity
+
+Hierarchical clustering
+
+Tried on group to 100 clusters
+Shortest life cluster: 
+81 hospital admin
+Average days from admin to death: 133 days
+Average diagnoses per stay: 
+Avg: 19.4567
+Std: 4.9865
+Top 10 diagnoses: 
+428 Heart Failure: 129 times, 
+427 Cardiac dysrhythmias: 105,
+250 Diabetes mellitus: 88, 
+038 Septicemia: 80, 
+995 Certain adverse effects not elsewhere classified: 78,
+585 Chronic kidney disease (ckd): 74, 
+403 Hypertensive chronic kidney disease: 71, 
+584 Acute kidney failure: 68, 
+518 Other diseases of lung: 65, 
+785 Symptoms involving cardiovascular system: 65
+Longest life cluster: 
+49 hospital admin
+Average days from admin to death: 1725 days
+Average diagnoses per stay:
+Avg: 8.1428
+Std: 2.2131
+Top 10 diagnoses:
+414 Other forms of chronic ischemic heart disease: 51 times, 
+401 Essential hypertension: 46, 
+272 Disorders of lipoid metabolism: 43, 
+410 Acute myocardial infarction: 14, 
+285 Other and unspecified anemias: 13, 
+411 Other acute and subacute forms of ischemic heart disease: 13, 
+276 Disorders of fluid electrolyte and acid-base balance: 11, 
+412 Old myocardial infarction: 10, 
+998 Other complications of procedures not elsewhere classified: 10, 
+244 Acquired hypothyroidism: 9
