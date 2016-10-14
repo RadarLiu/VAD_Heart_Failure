@@ -1,0 +1,57 @@
+ "Hypothyroidism NOS" "Atrial fibrillation"  ------- 5811
+ "Atrial fibrillation"  ------- 92794
+ "Hy kid NOS w cr kid I-IV" "Atrial fibrillation"  ------- 5426
+ "Acute respiratry failure"  ------- 26173
+ "Urin tract infection NOS" "Atrial fibrillation"  ------- 5861
+ "Acute kidney failure NOS" "DMII wo cmp nt st uncntr"  ------- 5207
+"CHF NOS"  ------- 5741
+ "CHF NOS" "Acute kidney failure NOS" "Hy kid NOS w cr kid I-IV"  ------- 5324
+ "Hyp kid NOS w cr kid V"  ------- 11048
+ "DMII wo cmp nt st uncntr"  ------- 24862
+ "Acute kidney failure NOS"  ------- 48839
+ "CHF NOS" "Chronic hypotension"  ------- 11398
+ "Acute kidney failure NOS" "Acute respiratry failure"  ------- 5262
+ "Hy kid NOS w cr kid I-IV"  ------- 15837
+ "CHF NOS" "Chronic kidney dis NOS"  ------- 8325
+ "Hypertension NOS"  ------- 12211
+ "Urin tract infection NOS"  ------- 16736
+ "Pneumoni"  ------- 10623
+ "Chr airway obstruct NEC"  ------- 11860
+ "CHF NOS" "Acute kidney failure NOS"  ------- 38224
+ "Chronic kidney dis NOS" "Hy kid NOS w cr kid I-IV"  ------- 5515
+ "End stage renal disease" "Hyp kid NOS w cr kid V"  ------- 7573
+ "CHF NOS" "Hy kid NOS w cr kid I-IV"  ------- 12974
+ "Crnry athrscl natve vssl"  ------- 34077
+ "Hypertension NOS" "CHF NOS"  ------- 7770
+ "CHF NOS" "Ac on chr syst hrt fail"  ------- 5497
+ "Chronic hypotension"  ------- 13934
+ "DMII wo cmp nt st uncntr" "Atrial fibrillation"  ------- 8316
+ "Septicemia NOS"  ------- 5332
+ "CHF NOS" "Severe sepsis"  ------- 6000
+ "CHF NOS" "Atrial fibrillation"  ------- 72018
+ "Ac on chr syst hrt fail"  ------- 5817
+ "CHF NOS" "DMII wo cmp nt st uncntr"  ------- 18075
+ "Hyperlipidemia NEC/NOS" "CHF NOS"  ------- 8664
+ "Chronic hypotension" "Atrial fibrillation"  ------- 5012
+ "CHF NOS" "Urin tract infection NOS"  ------- 12015
+ "Severe sepsis"  ------- 9803
+ "Chronic kidney dis NOS"  ------- 11325
+ "Pneumoni" "CHF NOS"  ------- 7174
+ "CHF NOS" "DMII wo cmp nt st uncntr" "Atrial fibrillation"  ------- 6163
+ "CHF NOS" "Hyp kid NOS w cr kid V"  ------- 6871
+ "CHF NOS" "Acute kidney failure NOS" "Atrial fibrillation"  ------- 12544
+ "Atrial fibrillation" "Acute respiratry failure"  ------- 6348
+ "CHF NOS" "Crnry athrscl natve vssl" "Atrial fibrillation"  ------- 8337
+ "Hypothyroidism NOS" "CHF NOS"  ------- 8422
+ "CHF NOS" "Crnry athrscl natve vssl"  ------- 27408
+ "CHF NOS"  ------- 188480
+ "Hypothyroidism NOS"  ------- 11573
+ "Crnry athrscl natve vssl" "Atrial fibrillation"  ------- 10325
+ "CHF NOS" "Acute respiratry failure"  ------- 18959
+ "Acute kidney failure NOS" "Hy kid NOS w cr kid I-IV"  ------- 6443
+ "Old myocardial infarct"  ------- 6762
+ "End stage renal disease"  ------- 9631
+ "Acute kidney failure NOS" "Atrial fibrillation"  ------- 15706
+ "Hyperlipidemia NEC/NOS"  ------- 11587
+ "Chr airway obstruct NEC" "CHF NOS"  ------- 8644
+ "CHF NOS" "End stage renal disease"  ------- 6197
