@@ -1,0 +1,37 @@
+subject_id 261
+0.320555	{'count': 211, 'sequence': [['CHF NOS', 'DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['DEATH']]}
+0.308573	{'count': 88, 'sequence': [['CHF NOS', 'DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['CHF NOS'], ['DEATH']]}
+0.307599	{'count': 78, 'sequence': [['CHF NOS', 'DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['Atrial fibrillation'], ['DEATH']]}
+0.307404	{'count': 76, 'sequence': [['CHF NOS', 'DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['DEATH']]}
+0.307209	{'count': 74, 'sequence': [['CHF NOS', 'DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['CHF NOS', 'Atrial fibrillation'], ['DEATH']]}
+0.306917	{'count': 71, 'sequence': [['CHF NOS', 'DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['DMII wo cmp nt st uncntr'], ['DEATH']]}
+0.30643	{'count': 66, 'sequence': [['CHF NOS', 'DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['CHF NOS', 'DMII wo cmp nt st uncntr'], ['DEATH']]}
+0.305845	{'count': 60, 'sequence': [['CHF NOS', 'DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['DEATH']]}
+0.305553	{'count': 57, 'sequence': [['CHF NOS', 'DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['CHF NOS', 'DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['DEATH']]}
+0.305163	{'count': 53, 'sequence': [['CHF NOS', 'DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['Acute kidney failure NOS'], ['DEATH']]}
+0.304579	{'count': 47, 'sequence': [['CHF NOS', 'DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['CHF NOS', 'Acute kidney failure NOS'], ['DEATH']]}
+
+subject_id 1024
+0.30302	{'count': 31, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'DMII wo cmp nt st uncntr', 'Hy kid NOS w cr kid I-IV', 'Atrial fibrillation'], ['DEATH']]}
+0.30302	{'count': 31, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'Urin tract infection NOS', 'Hy kid NOS w cr kid I-IV', 'Atrial fibrillation'], ['DEATH']]}
+0.257306	{'count': 75, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'Hy kid NOS w cr kid I-IV', 'Atrial fibrillation'], ['DEATH']]}
+0.255261	{'count': 54, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'DMII wo cmp nt st uncntr', 'Hy kid NOS w cr kid I-IV'], ['DEATH']]}
+0.254676	{'count': 48, 'sequence': [['CHF NOS', 'Chronic kidney dis NOS', 'DMII wo cmp nt st uncntr', 'Hy kid NOS w cr kid I-IV', 'Atrial fibrillation'], ['DEATH']]}
+0.254384	{'count': 45, 'sequence': [['CHF NOS', 'Chronic kidney dis NOS', 'Urin tract infection NOS', 'Hy kid NOS w cr kid I-IV', 'Atrial fibrillation'], ['DEATH']]}
+0.254384	{'count': 45, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Urin tract infection NOS', 'Hy kid NOS w cr kid I-IV', 'Atrial fibrillation'], ['DEATH']]}
+0.254286	{'count': 44, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'DMII wo cmp nt st uncntr', 'Hy kid NOS w cr kid I-IV', 'Atrial fibrillation'], ['DEATH']]}
+0.254092	{'count': 42, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'Urin tract infection NOS', 'Hy kid NOS w cr kid I-IV'], ['DEATH']]}
+0.253799	{'count': 39, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'DMII wo cmp nt st uncntr', 'Atrial fibrillation'], ['DEATH']]}
+0.253702	{'count': 38, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'Urin tract infection NOS', 'Atrial fibrillation'], ['DEATH']]}
+
+0.29649	{'count': 21, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'Hy kid NOS w cr kid I-IV', 'Atrial fibrillation'], ['Atrial fibrillation'], ['DEATH']]}
+0.294151	{'count': 21, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'Hy kid NOS w cr kid I-IV', 'Atrial fibrillation'], ['CHF NOS', 'Atrial fibrillation'], ['DEATH']]}
+0.290935	{'count': 21, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'Urin tract infection NOS'], ['Urin tract infection NOS', 'Atrial fibrillation'], ['DEATH']]}
+0.252338	{'count': 24, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'Hy kid NOS w cr kid I-IV', 'Atrial fibrillation'], ['CHF NOS'], ['DEATH']]}
+0.248244	{'count': 39, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Urin tract infection NOS', 'Atrial fibrillation'], ['Atrial fibrillation'], ['DEATH']]}
+0.247952	{'count': 36, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Hy kid NOS w cr kid I-IV', 'Atrial fibrillation'], ['Atrial fibrillation'], ['DEATH']]}
+0.247854	{'count': 35, 'sequence': [['CHF NOS', 'Chronic kidney dis NOS', 'Hy kid NOS w cr kid I-IV', 'Atrial fibrillation'], ['Atrial fibrillation'], ['DEATH']]}
+0.247854	{'count': 35, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'Urin tract infection NOS'], ['Atrial fibrillation'], ['DEATH']]}
+0.247562	{'count': 32, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'Atrial fibrillation'], ['Atrial fibrillation'], ['DEATH']]}
+0.247464	{'count': 31, 'sequence': [['CHF NOS', 'Acute kidney failure NOS', 'Chronic kidney dis NOS', 'Urin tract infection NOS'], ['Urin tract infection NOS'], ['DEATH']]}
+0.247367	{'count': 30, 'sequence': [['Hypothyroidism NOS', 'CHF NOS', 'Acute kidney failure NOS', 'Atrial fibrillation'], ['Atrial fibrillation'], ['DEATH']]}
