@@ -49,13 +49,15 @@ def containSimilarity(pattern, patient):
 
 
 def calSimilarity(i, pattern, patient):
-	if len(pattern['sequence']) <= len(patient):
+	if len(pattern['sequence']) <= len(patient)-1:
+		return 0
+	if pattern['age'] != patient[0]:
 		return 0
 	sim = 0
 
 	if method == 1:
 		# Method 1: Naive matching, scan admissions and match one by one
-		for i, diagnosis in enumerate(patient):
+		for i, diagnosis in enumerate(patient[1:]):
 			if sim_choice == 1:
 				sim += jaccardSimilarity(1, pattern['sequence'][i], diagnosis, pattern['sequence'][0][1])
 			else:
@@ -65,7 +67,7 @@ def calSimilarity(i, pattern, patient):
 		pattern_index = 0
 		patient_index = 0
 		offset = pattern['sequence'][0][1]
-		for patient_index, diagnosis in enumerate(patient):
+		for patient_index, diagnosis in enumerate(patient[1:]):
 			# find the best index (timestamp) in frequent pattern that matches current diagnosis
 			while pattern_index < len(pattern['sequence']) - 1 and abs((pattern['sequence'][pattern_index][1] - offset) - diagnosis[1]) > abs((pattern['sequence'][pattern_index+1][1] - offset) - diagnosis[1]):
 				pattern_index += 1
@@ -80,7 +82,7 @@ def calSimilarity(i, pattern, patient):
 		patient_dict = dict()
 		pattern_dict = dict()
 		offset = pattern['sequence'][0][1]
-		for diagnosis in patient:
+		for diagnosis in patient[1:]:
 			timestamp = diagnosis[1]
 			if timestamp in patient_dict:
 				patient_dict[timestamp] += list(diagnosis[0])
@@ -118,16 +120,17 @@ def calSimilarity(i, pattern, patient):
 
 
 # preprocess existing sequential data
-with open('spade_diagnose_from_heart_to_death_timestamped_revised.txt') as f:
+with open('spade_diagnose_from_heart_to_death_final_revised_with_dob.txt') as f:
 	for line in f:
 		sequence, count = line.strip().split('#SUP: ')
 		count = int(count)
 		if count > maxCount:
 			maxCount = count
 		pattern = dict()
+		pattern['age'] = int(sequence.split('->')[0].strip())
 		pattern['count'] = count
 		pattern['sequence'] = list()
-		for s in sequence.split('->'):
+		for s in sequence.split('->')[1:]:
 			pattern['sequence'].append((s.strip().split('[')[0].strip()[1:-1].split('\" \"'), int(s.strip().split('[')[1][:-1])))
 		database.append(pattern)
 
@@ -157,7 +160,7 @@ patient = [
 ]
 
 #735
-patient = [
+patient = [2,
 (['Iatrogen pulm emb/infarc', 'Surg compl-heart', 'Atrial fibrillation', 'CHF NOS', 'Anemia NOS', 'Crnry athrscl natve vssl'],0),\
 (['Ac posthemorrhag anemia', 'Hypovolemia', 'Myelopathy in oth dis', 'Hx of kidney malignancy', 'Acquired absence kidney', 'Hx-ven thrombosis/embols'],28),\
 #(['Neoplasm related pain', 'Hypothyroidism NOS', 'Obstructive sleep apnea', 'Hypertension NOS', 'Hyperlipidemia NEC/NOS', 'Hx of kidney malignancy', 'Arthrodesis status', 'Acquired absence kidney', 'Hx antineoplastic chemo', 'Hx of irradiation', 'Path fx oth spcf prt fmr', 'Abn react-surg proc NEC', 'Secondary malig neo skin', 'Secondary malig neo lung', 'Delirium d/t other cond', 'Ch DVT/embl dstl low ext', 'Atrial fibrillation'],33),
