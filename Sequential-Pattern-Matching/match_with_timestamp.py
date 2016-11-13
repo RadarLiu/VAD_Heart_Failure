@@ -8,6 +8,7 @@ alpha = 0.9
 sim_choice = 1
 top_n = 10
 method = 3
+age_bmi_opt_in = True
 
 # jaccard similarity
 def jaccardSimilarity(method, l1, l2, offset=0, ):
@@ -17,7 +18,9 @@ def jaccardSimilarity(method, l1, l2, offset=0, ):
 	@l2: patient diagnoses
 	@offset: first timestamp in frequent pattern
 	'''
-	if method == 1:
+	if method == 0:
+		return float(len(set(l1[0])&set(l2[0]))) / len(set(l1[0])|set(l2[0]))
+	elif method == 1:
 		delta = abs((l1[1] - offset) - l2[1]) 	# penalty on time delta
 		# if l1[1] == offset:	# first admission, high penalty
 		# 	delta = 3
@@ -51,11 +54,17 @@ def containSimilarity(pattern, patient):
 def calSimilarity(i, pattern, patient):
 	if len(pattern['sequence']) <= len(patient)-1:
 		return 0
-	if pattern['age'] != patient[0]:
-		return 0
+	if age_bmi_opt_in:
+		if pattern['age_bmi'] != patient[0]:
+			return 0
 	sim = 0
-
-	if method == 1:
+	if method == 0:	# match withou timestamp
+		for i, diagnosis in enumerate(patient[1:]):
+			if sim_choice == 1:
+				sim += jaccardSimilarity(0, pattern['sequence'][i], diagnosis)
+			else:
+				sim += containSimilarity(pattern['sequence'][i], diagnosis)
+	elif method == 1:
 		# Method 1: Naive matching, scan admissions and match one by one
 		for i, diagnosis in enumerate(patient[1:]):
 			if sim_choice == 1:
@@ -120,14 +129,14 @@ def calSimilarity(i, pattern, patient):
 
 
 # preprocess existing sequential data
-with open('spade_diagnose_from_heart_to_death_final_revised_with_dob.txt') as f:
+with open('spade_diagnose_from_heart_to_death_final_revised_with_bmi.out') as f:
 	for line in f:
 		sequence, count = line.strip().split('#SUP: ')
 		count = int(count)
 		if count > maxCount:
 			maxCount = count
 		pattern = dict()
-		pattern['age'] = int(sequence.split('->')[0].strip())
+		pattern['age_bmi'] = int(sequence.split('->')[0].strip())
 		pattern['count'] = count
 		pattern['sequence'] = list()
 		for s in sequence.split('->')[1:]:
