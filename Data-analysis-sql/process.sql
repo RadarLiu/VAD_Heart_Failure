@@ -275,3 +275,120 @@ group by bmi_bin, lifespan_bin
 order by bmi_bin ASC, lifespan_bin ASC
 ;
 .output stdout
+
+
+-- add afterlife column
+ALTER TABLE summary_bmi ADD COLUMN afterlife INTEGER;
+UPDATE summary_bmi 
+SET afterlife = 
+(select afterlife 
+from(
+select SUBJECT_ID,  max(cast((julianday(DOD) - julianday(ADMITTIME)) as int)) as afterlife from summary_bmi
+where ICD9_CODE like "428%" 
+group by subject_id) a 
+where summary_bmi.subject_id = a.subject_id);
+
+create table summary_new(
+"SUBJECT_ID" TEXT,
+"DOB" TEXT,
+"DOD" TEXT,
+"LIFESPAN" INTEGER,
+"HADM_ID" TEXT,
+"SEQ_NUM" TEXT,
+"ICD9_CODE" TEXT,
+"ADMITTIME" TEXT,
+"DISCHTIME" TEXT,
+"STAYTIME" INTEGER,
+"FREQ" INTEGER,
+"BMI" REAL,
+"BMI_BIN" INTEGER,
+"AFTERLIFE" INTEGER
+);
+
+insert into summary_new
+select 
+summary_bmi.SUBJECT_ID, 
+DOB, 
+DOD, 
+LIFESPAN, 
+HADM_ID,
+SEQ_NUM, 
+ICD9_CODE,
+ADMITTIME, 
+DISCHTIME,
+STAYTIME,
+FREQ,
+BMI,
+BMI_BIN,
+a.afterlife
+from summary_bmi left join
+(select SUBJECT_ID,  max(cast((julianday(DOD) - julianday(ADMITTIME)) as int)) as afterlife from summary_bmi
+where ICD9_CODE like "428%" 
+group by subject_id) a
+on summary_bmi.SUBJECT_ID = a.SUBJECT_ID;
+
+create table summary_newnew(
+"SUBJECT_ID" TEXT,
+"DOB" TEXT,
+"DOD" TEXT,
+"LIFESPAN" INTEGER,
+"HADM_ID" TEXT,
+"SEQ_NUM" TEXT,
+"ICD9_CODE" TEXT,
+"ADMITTIME" TEXT,
+"DISCHTIME" TEXT,
+"STAYTIME" INTEGER,
+"FREQ" INTEGER,
+"BMI" REAL,
+"BMI_BIN" INTEGER,
+"AFTERLIFE" INTEGER,
+"FIRSTHF" INTEGER,
+"FIRSTHFTIME" TEXT
+);
+
+insert into summary_newnew
+select 
+summary_new.SUBJECT_ID, 
+DOB, 
+DOD, 
+LIFESPAN, 
+HADM_ID,
+SEQ_NUM, 
+ICD9_CODE,
+ADMITTIME, 
+DISCHTIME,
+STAYTIME,
+FREQ,
+BMI,
+BMI_BIN,
+AFTERLIFE,
+a.FIRSTHF,
+a.firsthftime
+from summary_new left join
+(select SUBJECT_ID,  min(freq) as FIRSTHF, min(ADMITTIME) as FIRSTHFtime from summary_new
+where ICD9_CODE like "428%" 
+group by subject_id) a
+on summary_new.SUBJECT_ID = a.SUBJECT_ID;
+
+.mode csv
+.output test.csv
+select subject_id, bmi_bin, afterlife, ICD9_CODE, freq 
+from summary_newnew
+where freq >= FIRSTHF
+order by subject_id ASC, freq ASC;
+.output stdout
+
+ALTER TABLE summary_newnew ADD COLUMN 'TIMESTAMP' INTEGER;
+UPDATE summary_newnew 
+SET timestamp = cast((julianday(ADMITTIME) - julianday(FIRSTHFtime)) as int) / 180;
+
+.mode csv
+.output test.csv
+select subject_id, bmi_bin, afterlife, ICD9_CODE, freq, timestamp 
+from summary_newnew
+where freq >= FIRSTHF
+order by subject_id ASC, freq ASC;
+.output stdout
+
+UPDATE summary_newnew 
+SET bmi_bin = case when bmi_bin = 0 then 9 else bmi_bin end; 
